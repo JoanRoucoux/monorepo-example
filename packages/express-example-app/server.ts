@@ -1,6 +1,6 @@
 import express from 'express';
 import _ from 'lodash';
-import { QueryPayload } from 'shared-example-data';
+import { QueryPayload } from '@my-namespace/shared-example-data';
 const app = express();
 const port = 3001;
 

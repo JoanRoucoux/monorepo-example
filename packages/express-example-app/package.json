@@ -1,5 +1,5 @@
 {
-  "name": "express-example-app",
+  "name": "@my-namespace/express-example-app",
   "version": "1.0.0",
   "description": "express example app",
   "main": "dist/server.js",
