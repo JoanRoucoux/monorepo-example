@@ -1,0 +1,29 @@
+{
+  "name": "shared-example-data",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "“JoanRoucoux” <joan.roucoux@gmail.com>",
+  "homepage": "https://github.com/JoanRoucoux/monorepo-example#readme",
+  "license": "MIT",
+  "main": "lib/shared-example-data.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoanRoucoux/monorepo-example.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/shared-example-data.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/JoanRoucoux/monorepo-example/issues"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}

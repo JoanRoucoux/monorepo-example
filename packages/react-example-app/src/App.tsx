@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import { QueryPayload } from "express-example-app/server";
+import { QueryPayload } from 'shared-example-data';
 import logo from './logo.svg';
 import './App.css';
 
