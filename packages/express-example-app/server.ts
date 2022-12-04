@@ -1,6 +1,11 @@
 import express from 'express';
+import _ from 'lodash';
 const app = express();
 const port = 3001;
+
+export interface QueryPayload {
+  payload: string;
+}
 
 app.use((_req, res, next) => {
   // Allow any website to connect
@@ -11,7 +16,10 @@ app.use((_req, res, next) => {
 });
 
 app.get("/data", (req, res) => {
-  res.json({ value: "my awesome data" });
+  const responseData: QueryPayload = {
+    payload: _.snakeCase("Awesome server data returned successfully"),
+  };
+  res.json(responseData);
 });
 
 app.listen(port, () => {

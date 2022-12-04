@@ -1,8 +1,11 @@
 import React from 'react';
+import _ from 'lodash';
+import { QueryPayload } from "express-example-app/server";
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const title: string = _.toUpper('Learn React');
   return (
     <div className="App">
       <header className="App-header">
@@ -16,13 +19,13 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {title}
         </a>
         <button
           onClick={() => {
             fetch("http://localhost:3001/data", {})
               .then((response) => response.json())
-              .then((data) => console.log(data));
+              .then((data: QueryPayload) => console.log(data.payload));
           }}
         >
           Get my awesome data
