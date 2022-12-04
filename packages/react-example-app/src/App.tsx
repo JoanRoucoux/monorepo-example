@@ -1,6 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import { QueryPayload } from 'shared-example-data';
+import DarkMode from './react-dark-mode/src/DarkMode';
 import logo from './logo.svg';
 import './App.css';
 
@@ -30,6 +31,7 @@ function App() {
         >
           Get my awesome data
         </button>
+        <DarkMode />
       </header>
     </div>
   );
